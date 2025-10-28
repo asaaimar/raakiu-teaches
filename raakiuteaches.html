@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raakiu Teaches</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #3498db, #9b59b6);
+      color: white;
+      text-align: center;
+      padding: 0.5rem 0.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    section {
+      flex: 1 1 200px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      color: #fff;
+      padding: .2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .red { background-color: #e74c3c; }
+    .blue { background-color: #3498db; }
+    .lime { background-color: #a6e22e; color: #000; }
+    .purple { background-color: #9b59b6; }
+    .orange { background-color: #f39c12; }
+    .teal { background-color: #1abc9c; }
+    .pink { background-color: #e84393; }
+
+    section h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+
+    section p {
+      margin: 0.5rem 0 1rem;
+      font-size: 1rem;
+    }
+
+    section img {
+      width: 50%;
+      height: 50%;
+      object-fit: fill;
+      border-radius: 6px;
+    }
+
+    /* Subjects grid */
+    .subjects {
+      background: #fff;
+      border-radius: 10px;
+      padding: .5rem;
+      margin: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .subjects h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+    }
+
+    .subject-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .subject {
+      flex: 1 1 150px;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: 600;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .subject:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .english { background: #2980b9; }
+    .math { background: #27ae60; }
+    .dhivehi { background: #16a085; }
+    .arabic { background: #d35400; }
+    .islam { background: #8e44ad; }
+    .science { background: #f1c40f; color: #000; }
+
+    footer {
+      background: #2c3e50;
+      color: #ecf0f1;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    footer h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    footer p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 800px) {
+      section {
+        flex: 1 1 100%;
+      }
+      .subject-grid {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Raakiu Teaches</h1>
+    <p>Learn, Play, Grow — with curiosity and creativity</p>
+  </header>
+
+  <main>
+    <section class="red">
+      <h2>Learn</h2>
+      <p>Learn English, Dhivehi, Arabic, and Mathematics literacy.</p>
+      <img src="learn-img.png" alt="Learn">
+    </section>
+
+    <section class="blue">
+      <h2>Play</h2>
+      <p>Have fun and play through education.</p>
+      <img src="toy-img.png" alt="Play">
+    </section>
+
+    <section class="lime">
+      <h2>Grow</h2>
+      <p>Grow through playing and learning.</p>
+      <img src="grow-img.png" alt="Grow">
+    </section>
+  </main>
+
+  <section class="subjects">
+    <h2>Subjects</h2>
+    <div class="subject-grid">
+      <div class="subject english">English</div>
+      <div class="subject math">Mathematics</div>
+      <div class="subject dhivehi">Dhivehi</div>
+      <div class="subject arabic">Arabic</div>
+      <div class="subject islam">Islam</div>
+      <div class="subject science">Science</div>
+    </div>
+  </section>
+
+  <footer>
+    <h3>About the Author</h3>
+    <p>
+      Raakiu is a passionate educator who believes in blending learning with creativity and play. 
+      Through <strong>Raakiu Teaches</strong>, he aims to make education inspiring, colorful, 
+      and engaging for every learner.
+    </p>
+  </footer>
+
+</body>
+</html>
